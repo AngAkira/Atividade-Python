@@ -1,4 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-arquivo = pd.read_csv('arquivo.csv')
+import prep_arquivos as pa
+
+arquivo = pd.read_csv('Atividade2.csv')
+
