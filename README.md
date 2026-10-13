@@ -2,9 +2,9 @@ RELATÓRIO – ANÁLISE DE DADOS DE SAÚDE (AVC)
 
 Equipe: 
 
-Ângelo Akira da Silva Barbosa
+https://github.com/AngAkira
 
-Heloísa Flores de Souza
+https://github.com/heloisa-flores
 
 1. Objetivo
 Analisar o arquivo Atividade2.csv, comparando pacientes com e sem registro de AVC (variável stroke). O programa foi feito em Python, com pandas, Matplotlib e SQLite. Os resultados valem apenas para este conjunto de dados e não indicam, por si só, relação de causa e efeito.
