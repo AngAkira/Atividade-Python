@@ -1,6 +1,7 @@
 RELATÓRIO – ANÁLISE DE DADOS DE SAÚDE (AVC)
 
 Equipe: 
+
 Ângelo Akira da Silva Barbosa
 
 Heloísa Flores de Souza
