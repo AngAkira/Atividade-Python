@@ -31,4 +31,5 @@ def preparar_dados(arquivo):
     print(arquivo.isnull().sum())
     print("\nTotal após o tratamento:",
           arquivo.isnull().sum().sum())
+    print()
     return arquivo

@@ -1,22 +1,63 @@
 def comparar(arquivo):
     com_avc = arquivo['stroke'] == 1
     sem_avc = arquivo['stroke'] == 0
-    print(f"\nComparando dados, com avc:{com_avc.sum()}")
-    print(f"Idade: {arquivo.loc[com_avc, 'age'].mean()}")
-    print(f"Hipertensão: {arquivo.loc[com_avc, 'hypertension'].sum()}")
-    print(f"Doença cardíaca: {arquivo.loc[com_avc, 'heart_disease'].sum()}")
-    print(f"Nivel médio de glicose: {arquivo.loc[com_avc, 'glucose_level'].sum()}")
 
-    print(f"\nComparando dados, sem avc:{sem_avc.sum()}")
-    print(f"Idade: {arquivo.loc[sem_avc, 'age'].mean()}")
-    print(f"Hipertensão: {arquivo.loc[sem_avc, 'hypertension'].sum()}")
-    print(f"Doença cardíaca: {arquivo.loc[sem_avc, 'heart_disease'].sum()}")
-    print(f"Nivel medio de glicose: {arquivo.loc[sem_avc, 'glucose_level'].sum()}")
+    # Idade
+    print(
+        f"Idade média: com AVC = {arquivo.loc[com_avc, 'age'].mean():.2f} | "
+        f"sem AVC = {arquivo.loc[sem_avc, 'age'].mean():.2f}"
+    )
 
-#•	idade;
-#hipertensão;
-#doença cardíaca;
-#nível médio de glicose;
-#IMC;
-#situação de tabagismo.
-#
+    # Hipertensão
+    print(
+        f"Hipertensão: com AVC = {arquivo.loc[com_avc, 'hypertension'].mean() * 100:.2f}% | "
+        f"sem AVC = {arquivo.loc[sem_avc, 'hypertension'].mean() * 100:.2f}%"
+    )
+
+    # Doença cardíaca
+    print(
+        f"Doença cardíaca: com AVC = {arquivo.loc[com_avc, 'heart_disease'].mean() * 100:.2f}% | "
+        f"sem AVC = {arquivo.loc[sem_avc, 'heart_disease'].mean() * 100:.2f}%"
+    )
+
+    # Glicose
+    print(
+        f"Glicose média: com AVC = {arquivo.loc[com_avc, 'avg_glucose_level'].mean():.2f} | "
+        f"sem AVC = {arquivo.loc[sem_avc, 'avg_glucose_level'].mean():.2f}"
+    )
+
+    # IMC
+    print(
+        f"IMC médio: com AVC = {arquivo.loc[com_avc, 'bmi'].mean():.2f} | "
+        f"sem AVC = {arquivo.loc[sem_avc, 'bmi'].mean():.2f}"
+    )
+    #Situação de tabagismo
+    print("\nTabagismo com AVC:")
+    print(arquivo.loc[com_avc, 'smoking_status'].value_counts())
+
+    print("\nTabagismo sem AVC:")
+    print(arquivo.loc[sem_avc, 'smoking_status'].value_counts())
+
+
+def interpretacao():
+        print("\n--- Interpretação dos resultados ---")
+
+        print(
+            "Os pacientes com registro de AVC apresentaram maior idade média "
+            "e maiores proporções de hipertensão e doença cardíaca. "
+            "A média de glicose também foi superior nesse grupo, enquanto "
+            "a diferença no IMC foi menor."
+        )
+
+        print(
+            "A distribuição do tabagismo pode ser observada pelas quantidades "
+            "de pacientes em cada categoria."
+        )
+
+        print(
+            "Essas diferenças descrevem os dados analisados e não comprovam "
+            "relações de causa e efeito."
+        )
+
+
+

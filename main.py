@@ -1,5 +1,4 @@
 import pandas as pd
-import matplotlib.pyplot as plt
 
 import prep_arquivos as pa
 import analise as an
@@ -11,6 +10,11 @@ dados = pa.preparar_dados(df)
 
 #etapa 2
 an.comparar(dados)
+an.interpretacao()
+
 #etapa 3
+gr.grafico_idade(dados)
+gr.grafico_hipertensao(dados)
+gr.grafico_quantidade(dados)
 
 #etapa 4
