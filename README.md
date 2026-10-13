@@ -1,4 +1,4 @@
-#RELATÓRIO – ANÁLISE DE DADOS DE SAÚDE (AVC)
+RELATÓRIO – ANÁLISE DE DADOS DE SAÚDE (AVC)
 
 Equipe: 
 Ângelo Akira da Silva Barbosa
