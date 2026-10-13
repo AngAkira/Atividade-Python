@@ -9,6 +9,7 @@ def grafico_idade(arquivo):
     plt.xlabel('Idade (anos)')
     plt.ylabel('Quantidade de pacientes')
     plt.tight_layout()
+    plt.savefig('grafico_idade.png', dpi=150)
     plt.show()
 
 def grafico_hipertensao(arquivo):
@@ -21,6 +22,7 @@ def grafico_hipertensao(arquivo):
     plt.xlabel('Grupo de pacientes')
     plt.ylabel('Pacientes com hipertensão (%)')
     plt.tight_layout()
+    plt.savefig('grafico_hipertensao.png', dpi=150)
     plt.show()
 
 def grafico_quantidade(arquivo):
@@ -35,6 +37,7 @@ def grafico_quantidade(arquivo):
     plt.xlabel('Registro de AVC')
     plt.ylabel('Quantidade de pacientes')
     plt.tight_layout()
+    plt.savefig('Grafico_quantidade.png', dpi=150)
     plt.show()
     print("\n\nO gráfico foi escolhido para visualizar a quantidade de pacientes com e sem registro de AVC no conjunto de dados."
           " Essa informação permite identificar a diferença no tamanho dos grupos e perceber se existe um desequilíbrio na distribuição dos registros."
